@@ -1,39 +1,36 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Ma page de compétences</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Skills</title>
   <link rel="stylesheet" href="style.css">
+    <style>
+      p[data-value] {
+        width: calc(attr(data-value type(<number>)) * 1%);
+      }
+  </style>
 </head>
 <body>
-
-
   <ul>
     <li>
-      <h2>HTML5</h2>
-      <progress value="85" max="100" class="html5">85%</progress>
-      <p data-value="85">85%</p>
+      <h2>Frontend</h2>
+      <p data-value="80" >HTML5</p>
+      <progress class="html5" value="80" max="100"></progress>
+      <p data-value="60">CSS3</p>
+      <progress class="css3" value="60" max="100"></progress>
+      <p data-value="50">jQuery</p>
+      <progress class="jquery" value="50" max="100"></progress>
+    </li>
     <li>
-      <h2>Python</h2>
-      <progress value="70" max="100" class="python">70%</progress>
-      <p data-value="70">70%</p>
-    <li>
-      <h2>CSS3</h2>
-      <progress value="80" max="100" class="css3">80%</progress>
-      <p data-value="80">80%</p>
-    <li>
-      <h2>PHP</h2>
-      <progress value="60" max="100" class="php">60%</progress>
-      <p data-value="60">60%</p>
-    <li>
-      <h2>jQuery</h2>
-      <progress value="75" max="100" class="jquery">75%</progress>
-      <p data-value="75">75%</p>
-    <li>
-      <h2>Node.js</h2>
-      <progress value="50" max="100" class="node-js">50%</progress>
-      <p data-value="50">50%</p>
+      <h2>Backend</h2>
+      <p data-value="75">Python</p>
+      <progress class="python" value="75" max="100"></progress>
+      <p data-value="65">PHP</p>
+      <progress class="php" value="65" max="100"></progress>
+      <p data-value="35">Node.js</p>
+      <progress class="node-js" value="35" max="100"></progress>
+    </li>
   </ul>
-
 </body>
 </html>
